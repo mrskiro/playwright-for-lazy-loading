@@ -10,7 +10,13 @@ export default function Home() {
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="icon" href="/favicon.ico" />
       </Head>
-      <main></main>
+      <main style={{ position: "relative" }}>
+        {[...Array(50)].map((_, i) => (
+          <p key={i}>{i}</p>
+        ))}
+
+        <Image src="/cat.jpg" alt="image" width={400} height={600} />
+      </main>
     </>
   )
 }
