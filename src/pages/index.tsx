@@ -9,7 +9,7 @@ export default function Home() {
         <meta name="viewport" content="width=device-width, initial-scale=1" />
       </Head>
       <main style={{ position: "relative" }}>
-        {[...Array(50)].map((_, i) => (
+        {[...Array(120)].map((_, i) => (
           <p key={i}>{i}</p>
         ))}
 
